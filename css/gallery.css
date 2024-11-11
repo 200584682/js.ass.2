@@ -1,0 +1,136 @@
+/* General Reset and Basic Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa;  /* Changed background color */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2d3e50;  /* Changed heading color */
+    margin-bottom: 20px;
+}
+
+/* Gallery Container */
+#gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;  /* Increased border radius */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Main Image and Caption */
+figure {
+    margin: 0;
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;  /* More rounded corners */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+figcaption {
+    font-size: 1.2rem;
+    color: #444;  /* Slightly darker for readability */
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Thumbnail List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+ul li {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;  /* More rounded corners for list items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul img {
+    width: 240px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;  /* More rounded corners for images */
+    transition: filter 0.3s, transform 0.3s;
+    filter: grayscale(100%);
+}
+
+ul li:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);  /* Slightly more zoomed-in effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
+}
+
+ul li.active img {
+    filter: none;
+    border: 3px solid #00bcd4;  /* Unique border color */
+}
+
+/* Search and Button Styling */
+#search-input {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #b3e5fc;  /* Lighter blue border */
+    border-radius: 30px;  /* Rounded corners for search bar */
+    margin-bottom: 20px;
+}
+
+#clear-search {
+    padding: 12px 16px;
+    background-color: #00bcd4;  /* Changed button color */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#clear-search:hover {
+    background-color: #0097a7;  /* Darker shade on hover */
+}
+
+button {
+    padding: 12px 22px;
+    background-color: #8bc34a;  /* Different color for primary button */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #689f38;  /* Darker green on hover */
+}
+
+button:active {
+    background-color: #558b2f;  /* Darker active state */
+}
+
+/* Additional Effects */
+ul img:hover {
+    filter: brightness(1.2);  /* Brighter image on hover */
+}
+
+figcaption {
+    font-weight: bold;
+    text-transform: capitalize;
+}

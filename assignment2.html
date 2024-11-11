@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Image Gallery | COMP1073 Client-Side JavaScript</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+
+    <h1>Flower Image Gallery</h1>
+
+    <!-- Search Input -->
+    <input type="text" id="search-input" placeholder="Search for an image...">
+
+    <button id="clear-search">Clear Search</button>
+
+    <!-- Main Image Section -->
+    <section id="gallery">
+        <figure>
+            <img src="images/flowers-pink-large.jpg" alt="Featured Image">
+            <figcaption>
+                <strong>Pink Flowers</strong><br/>
+                A lovely view of pink flowers<br/>
+                <em>Location: Münster, Germany</em>
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Thumbnail List -->
+    <ul id="thumbnail-list"></ul>
+
+    <!-- Slideshow Navigation Buttons -->
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+
+    <script src="js/gallery.js"></script>
+	<!-- PHOTO CREDITS
+    Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, North Rhine-Westphalia, Germany
+    By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61514522
+
+    Poppies in cornfield, Dülmen, North Rhine-Westphalia, Germany
+    By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=40957238
+
+    Daffodils in Sentmaring park, Münster, North Rhine-Westfalia, Germany
+    By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48211466
+
+    Sentmaring Park, Münster, North Rhine-Westphalia, Germany
+    By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48576226
+
+    Market in Münster, North Rhine-Westphalia, Germany
+    By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=62071586
+    -->
+</body>
+</html>
